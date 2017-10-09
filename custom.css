@@ -1,12 +1,20 @@
-h1 {font-size: 25px;
-    font-weight: bold}
-h2 {font-size: 25px;}
-h3 {font-size: 16px;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+h1 {font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;}
+
+h2 {font-size: 20px;}
+h3 {font-size: 15px;
     background-color: rgb(241, 90, 36);
+    width: 100%;
     border-radius: 50px;
     color: white;
     padding: 2px;
-    text-indent: 3px;}
+    text-indent: 3px;
+    }
+
+h1, h2, h3, p, .btn, li {font-family: 'Roboto', sans-serif;}
 
 .btn {background-color: rgb(46, 95, 255);
         color: white;
@@ -14,21 +22,27 @@ h3 {font-size: 16px;
         width: 100px;
         border-radius:50px;}
 
-.kleurvlak {background-color: rgb(46, 95, 255);
-            height: 400px;
-            z-index: 1;}
+.kleurvlak {position:relative;
+            z-index: -1;
+            background-color: rgb(46, 95, 255);
+            height: 500px;}
 
-.img-fluid {z-index: 2;
+.img-fluid {position: relative;
+            z-index: 1;
             border: 50px white;
             border-radius: 15px;}
 
 p, ol {background-color: rgb(242, 191, 187);
+    position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-size: 12px;
-    padding: 5px;
-    margin-top: -10px;
+    padding: 10px;
+    margin-top: -15px;
+    z-index: -1;
 }
+
+ol {padding-left: 30px;}
 
 
 
