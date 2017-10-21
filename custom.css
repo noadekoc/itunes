@@ -37,7 +37,8 @@ h4 {font-size: 20px;
     }
 
 
-h1, h2, h3, p, .btn, li {font-family: 'Roboto', sans-serif;}
+h1, h2, h3, p, .btn, li {font-family: 'Roboto', sans-serif;
+                    }
 
 button {background-color: rgb(46, 95, 255);
         color: white;
@@ -64,7 +65,7 @@ button:hover { background-color: white;
             border: 20px solid white;
             border-radius: 15px;}
 
-p, ol {background-color: rgb(242, 191, 187);
+p, ol, tbody {background-color: rgb(242, 191, 187);
     position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -73,6 +74,9 @@ p, ol {background-color: rgb(242, 191, 187);
     margin-top: -15px;
     z-index: -1;
 }
+tr:hover {background-color: rgb(46, 95, 255);
+        color: white;  }
+
 .cover {
     background-color: rgb(242, 191, 187);
     position: relative;
