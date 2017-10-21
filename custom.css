@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-h1 {font-size: 20px;
+h1 {font-size: 15px;
     font-weight: bold;
-    margin-top: 20px;}
+    margin-top: 20px;
+    font-variant: small-caps;
+    color: rgb(46, 95, 255);
+    margin-bottom: 20px;
+    text-indent: 20px;
+    border: 2px solid rgb(46, 95, 255);
+    border-radius: 50px;
+    }
+h1:hover{
+    background-color: rgb(46, 95, 255);
+    color: white;
+}
 
-h2 {font-size: 20px;}
+    
 h3 {font-size: 15px;
     background-color: rgb(241, 90, 36);
     width: 100%;
@@ -14,22 +25,45 @@ h3 {font-size: 15px;
     text-indent: 3px;
     }
 
+h4 {font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-variant: small-caps;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    text-indent: 15px;
+    }
+
+.jumbotron {background-color:  rgb(46, 95, 255);
+            height: 600px;}
+
 h1, h2, h3, p, .btn, li {font-family: 'Roboto', sans-serif;}
 
-.btn {background-color: rgb(46, 95, 255);
+button {background-color: rgb(46, 95, 255);
         color: white;
+        float: left;
         height: 25px;
         width: 100px;
-        border-radius:50px;}
+        border: none;
+        border-radius:50px;
+        padding-bottom: 25px;
+        margin-top: 20px;
+        }
+button:hover { background-color: white;
+                color: rgb(46, 95, 255);
+                border:2px solid rgb(46, 95, 255);
+            }
 
-.kleurvlak {position:relative;
-            z-index: -1;
+.kleurvlak {height: 1000px;
             background-color: rgb(46, 95, 255);
-            height: 500px;}
+            padding-top: 100px;}
 
-.img-fluid {position: relative;
-            z-index: 1;
-            border: 50px white;
+.kleurvlak2 {height: 30px;}
+
+.img-fluid {margin-top: 10px;
+            border: 20px solid white;
             border-radius: 15px;}
 
 p, ol {background-color: rgb(242, 191, 187);
@@ -41,9 +75,23 @@ p, ol {background-color: rgb(242, 191, 187);
     margin-top: -15px;
     z-index: -1;
 }
+.cover {
+    background-color: rgb(242, 191, 187);
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: -15px;
+    z-index: -1;}
 
 ol {padding-left: 30px;}
 
+i {float:right;
+    margin-right: 10px;}
+a {color: white;}
+
+a:hover{color:rgb(242, 191, 187);}
 
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -51,8 +99,13 @@ ol {padding-left: 30px;}
 
 /* Small devices (landscape phones, 576px and up)*/
 
-@media (min-width: 576px) {}
-
+@media (min-width: 576px) {.kleurvlak {height: 1200px;
+                                        padding-top: 10px;}
+                        .img-fluid {margin-top: 200px;}
+                        footer {top:400px;}
+                        .kleurvlak2 {background-color: white;}
+                        button {margin-bottom: 50px;}
+                        .jumbotron {height: 820px;}}
 
 /* Medium devices (tablets, 768px and up)*/
 
